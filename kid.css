@@ -1,0 +1,200 @@
+.kidShoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 30px;
+    padding: 30px 0;
+    margin: 0 auto;
+    color: black;
+}
+
+.kidShoes img{
+    width: 100%;
+}
+
+.kidShoes .one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* background: url(img/Kids/air-max-2090-big-kids-shoe-TXbpzs.jpg) no-repeat center center/cover; */
+   
+}
+
+
+.kidShoes .oneText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: end;
+}
+
+.kidShoes .two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /* background: url(img/Kids/air-max-exosense-big-kids-shoe-ZFvkfh.jpg) no-repeat center center/cover; */
+}
+
+.kidShoes .twoText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: end;
+}
+
+.kidShoes .three{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    /* background: url(img/Kids/air-vapormax-flyknit-3-big-kids-shoe-tMZqTB.jpg) no-repeat center center/cover; */
+}
+
+.kidShoes .threeText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.kidShoes .four{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* background: url(img/Kids/blazer-mid-big-kids-shoe-KLqCJq.jpg) no-repeat center center/cover; */
+}
+
+.kidShoes .fourText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.kidShoes .five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* background: url(img/Kids/force-1-little-kids-shoe-BLTBRxK1.jpg) no-repeat center center/cover; */
+
+}
+
+.kidShoes .fiveText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.kidShoes .six{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    /* background: url(img/Kids/lebron-7-big-kids-shoe-B6R4hd.jpg) no-repeat center center/cover; */
+}
+
+.kidShoes .sixText {
+    text-align: center;
+    border: grey solid 1px;
+    background: grey;
+    color: white;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: end;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* 
+@media(max-width: 600px) {
+    /* Stack Grid Items */
+    /* #showcase .showcase-container,
+    #home-articles .articles-container,
+    #main-footer .footer-container {
+      grid-template-columns: 1fr;
+    } */ 
+
+
+@media(max-width: 630px) {
+     
+    .kidShoes{
+    display: flex;
+    flex-direction: column;
+   
+    /* grid-template-rows: 6fr 1fr 6fr 1fr 6fr 1fr !important;  */
+    /* grid-template-areas: 
+    "one two"
+    "oneText twoText"
+    "three four"
+    "threeText fourText"
+    "five six"
+    "fiveText sixText" !important; */
+  }
+  .one{
+      flex-basis: 6fr;
+  }
+
+
+  /* body > section > div.one{
+      grid-area: one;
+  }
+  body > section > div.oneText{
+      grid-area: oneText;
+  }
+
+  body > section > div.two{
+      grid-area: two;
+  }
+  body > section > div.twoText{
+      grid-area: twoText;
+  }
+
+  body > section > div.three{
+      grid-area: three;
+  }
+  body > section > div.threeText{
+      grid-area: threeText;
+  }
+
+  body > section > div.four{
+      grid-area: four;
+  }
+  body > section > div.fourText{
+      grid-area: fourText;
+  }
+
+  body > section > div.five{
+      grid-area: five;
+  }
+  body > section > div.fiveText{
+      grid-area: fiveText;
+  }
+
+  body > section > div.six{
+      grid-area: six;
+  }
+  body > section > div.sixText{
+      grid-area: sixText;
+  } */
+
+}
+    

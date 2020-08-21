@@ -1,0 +1,65 @@
+form{
+    /* max-width: 200px; */
+    /* width: 350px;
+    margin: 40px auto; */
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+form, h3 {
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+    line-height: 2rem;
+    border: none;
+}
+body > div.container > form > input.submit{
+    width: 20%;
+}
+
+.signup-form{
+    height: 60vh;
+    background: #eeeeee;
+}
+
+.signup-form > #email{
+    border: none;
+}
+
+.signup-form .submit{
+    border: 1px solid;
+}
+
+.signup-form #email{
+    border: 1px solid;
+}
+
+#username, :placeholder-shown{
+    text-align: center;
+}
+body > div.container > form > a{
+    color: gray;
+    text-decoration: none;
+}
+
+.success{
+    border: 5px solid limegreen;
+}
+.error{
+    border: 5px solid crimson;
+}
+/* .container {
+    background-color: aqua;
+} */
+
+.feedback, .feedback1 {
+    font-size: 15px;
+    color: red;
+}

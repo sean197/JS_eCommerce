@@ -1,0 +1,34 @@
+.table{
+    margin: 20px 0;
+}
+
+body > h3{
+    text-align: center;
+    margin: 20px 0;
+} 
+
+.quantity{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#dropdown2{
+    width: 40%;
+}
+
+.buy{
+    text-align: center;
+}
+
+.purchase{
+    border: 1px solid;
+}
+
+.cartQuantity{
+    width: 13%;
+}
+
+.fas{
+    text-align: center;
+}

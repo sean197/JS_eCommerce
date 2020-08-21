@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eeeeee;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* NAVBAR */ 
+.navbar{
+    width: 100vw;
+    font-size: 13px;
+}
+
+form button{
+    color: black !important;
+    background: #eee !important;
+    border: black !important;
+}
+/* .navbar ul li{
+    font-weight: 700;
+} */
+
+.navbar ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* MAIN HEADER */
+
+.mainHeader{
+    height: 70vh;
+    width: 100vw;    
+/*    background: url(img/sectionImg.jpg) no-repeat center center/cover;*/
+}
+.mainHeader .bannerImg{
+    display: flex; 
+    background: url(img/nikeWallpaper.jpg) no-repeat center center/cover; 
+    height: 100%;
+    /* width: 100%; */
+    color: white;
+/*    background-size: 100% 100%; */
+    width: 100%;
+    height:100%;
+}
+
+.bannerImg .shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-flow: column;
+    line-height: 1.9rem;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.shop h1{
+    display: block;
+}
+.shop li{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-right: 3rem;
+}
+.shop a{
+    border-radius: 70px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+}
+.shop a:hover{
+    background: silver;
+}
+
+/*SECTION IN*/
+
+.latest{
+    width: 100%;
+    height: 88vh; 
+    margin: 0 auto;
+}
+
+.latest h3{
+    padding: 18px 0;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    color: #4E4B4A;
+    font-weight: 700;
+}
+
+.display{
+/*
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px 50px ;
+    grid-gap: 30px;
+*/
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    /* height: 400px; */
+    height: 97.3%;
+}
+.display .messi{
+    background: url(img/Athletes/lebron_james.png) no-repeat center center/cover;
+    width: 100%;
+/*
+    grid-column-start: 1;
+    grid-column-end: 2; 
+*/
+    flex-basis: 33%;
+}
+
+.display .messi:hover{
+    flex-basis: 100%;
+}
+
+.message{
+    display: flex;
+}
+
+.messiMessage{
+    display:none;
+   text-align: center;
+    font-size: 30px;
+    flex-basis: 30%;
+}
+.jordanMessage{ 
+    display:none;
+   text-align: center;
+    font-size: 30px;
+}
+
+.skeptaMessage{
+    display:none;
+   text-align: center;
+    font-size: 30px;
+}
+
+.text{
+    display: flex;
+    height: auto;
+    position: fixed;
+    flex-flow: row wrap;
+}
+
+.messiText{
+/*
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+*/
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.display .jordan{
+    flex-basis: 33%;
+    background: url(img/Athletes/skysports-neymar-football-psg_4681258.jpg) no-repeat center center/cover ;
+    width: 100%;
+/*
+    grid-column-start: 2;
+    grid-column-end: 3; 
+*/
+}
+.display .jordan:hover{
+    flex-basis: 100%;
+}
+.jordanText{
+/*
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+*/
+  padding-top: 20px;  
+    text-align: center;
+    font-size: 20px;
+    flex-basis: 33%;
+}
+.display .skepta{
+    flex-basis: 33%;
+    background: url(img/Athletes/patrick_mahomes.jpeg) no-repeat center center/cover ;
+    width: 100%;
+/*
+    grid-column-start: 3;
+    grid-column-end: 4; 
+*/
+}
+.display .skepta:hover{
+    flex-basis: 100%;
+}
+
+.skeptaText{
+/*
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+*/
+    padding-top: 20px;
+    flex-basis: 33%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ARTICLE */
+
+#about{
+    text-align: center;
+}
+
+#about h2{
+    margin: 2rem;
+}
+
+#about p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 1.9rem;
+}
+
+/* CART */
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    cursor: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+/* FOOTER */
+
+.footer2{
+    height: 250px;
+    width: 100%;
+    background: black;
+    color: gray;
+    margin-top: 20px;
+}
+.footer2 a{
+    color: gray;
+    text-decoration: none;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-size: 12px;
+}
+
+.first{
+    flex-basis: 33%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.second{
+    flex-basis: 33%;
+    text-align: center;
+    margin-top: 25px;
+}
+.third{
+    flex-basis: 33%;
+    text-align: center;
+    margin-top: 25px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 0; */
+}
+.social{
+    margin-right: 20px;
+    list-style: none;
+    /* padding: 20px 0; */
+}
+.socials i{
+    color: grey;
+}
+.socials  .twitter i:hover{
+    color: #1da1f2;
+}
+.socials .facebook i:hover{
+    color: #3b5998;
+}
+.socials .youtube i:hover{
+    color: red;
+}
+.socials .instagram i:hover{
+    color: #f09433;
+}
+.card-footer{
+    font-size: 30px;
+}
+.footer1{
+    font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 770px){
+    .shop{
+        display: flex;
+        flex-flow: column;
+        padding: 0;
+        justify-content: space-between;
+    } 
+    .shop li{
+        margin-bottom: 80px;
+    }
+    .text{
+        height: 50px;
+        flex-flow: row wrap;
+    }
+    .display{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 100px;
+    }
+    .messi:hover + .messiMessage{
+        display: block;
+        
+    }
+    .messiMessage{
+        display: none;
+    }
+    .jordanMessage{
+        display: none;
+    }
+    .skeptaMessage{
+        display: none;
+    }
+    .jordan:hover + .jordanMessage{
+        display: block;
+    }
+    .skepta:hover + .skeptaMessage{
+        display: block;
+    }
+    .footer2{
+        height: auto;
+        margin-top: 20px;
+    }
+    .footer2 .information {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+}
+@media  ( max-width:570px){
+    .text, .footer2 .information {
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+}
