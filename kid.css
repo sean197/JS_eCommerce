@@ -1,4 +1,4 @@
-.kidShoes{
+ #kid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr ;
@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-.kidShoes .one{
+.menShoes  #kid .one{
     grid-column: 1/2;
     grid-row: 1/2;
     /* background: url(img/Kids/air-max-2090-big-kids-shoe-TXbpzs.jpg) no-repeat center center/cover; */
@@ -31,7 +31,7 @@
     align-items: end;
 }
 
-.kidShoes .two{
+.menShoes  #kid .two{
     grid-column: 2/3;
     grid-row: 1/2;
     /* background: url(img/Kids/air-max-exosense-big-kids-shoe-ZFvkfh.jpg) no-repeat center center/cover; */
@@ -48,7 +48,7 @@
     align-items: end;
 }
 
-.kidShoes .three{
+.menShoes  #kid .three{
     grid-column: 3/4;
     grid-row: 1/2;
     /* background: url(img/Kids/air-vapormax-flyknit-3-big-kids-shoe-tMZqTB.jpg) no-repeat center center/cover; */
@@ -66,7 +66,7 @@
 }
 
 
-.kidShoes .four{
+.menShoes  #kid .four{
     grid-column: 1/2;
     grid-row: 2/3;
     /* background: url(img/Kids/blazer-mid-big-kids-shoe-KLqCJq.jpg) no-repeat center center/cover; */
@@ -84,7 +84,7 @@
 }
 
 
-.kidShoes .five{
+.menShoes  #kid .five{
     grid-column: 2/3;
     grid-row: 2/3;
     /* background: url(img/Kids/force-1-little-kids-shoe-BLTBRxK1.jpg) no-repeat center center/cover; */
@@ -103,7 +103,7 @@
 }
 
 
-.kidShoes .six{
+.menShoes  #kid .six{
     grid-column: 3/4;
     grid-row: 2/3;
     /* background: url(img/Kids/lebron-7-big-kids-shoe-B6R4hd.jpg) no-repeat center center/cover; */

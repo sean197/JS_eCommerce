@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
 body{
     background: #eeeeee;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,7 +16,7 @@ body{
 /* NAVBAR */ 
 .navbar{
     width: 100vw;
-    font-size: 13px;
+    font-size: 1.2rem;
 }
 
 form button{
@@ -35,32 +38,31 @@ form button{
     height: 70vh;
     width: 100vw;    
 /*    background: url(img/sectionImg.jpg) no-repeat center center/cover;*/
+    display: flex;
 }
 .mainHeader .bannerImg{
-    display: flex; 
-    background: url(img/nikeWallpaper.jpg) no-repeat center center/cover; 
+    display: flex;
+    background: url(img/nikeWallpaper.jpg) no-repeat center center/cover;
     height: 100%;
-    /* width: 100%; */
-    color: white;
-/*    background-size: 100% 100%; */
+    width: 100%;
+/*    background-size: 100% 100%;*/
+/*
     width: 100%;
     height:100%;
+*/
 }
-
 .bannerImg .shop{
     display: flex;
     align-items: center;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    flex-flow: column;
-    line-height: 1.9rem;
-    margin: 0 auto;
-    font-weight: 600;
 }
-.shop h1{
-    display: block;
+
+#realNav{
+    z-index: 300;
 }
+
 .shop li{
     align-items: center;
     justify-content: center;
@@ -68,8 +70,10 @@ form button{
     margin-right: 3rem;
 }
 .shop a{
+    border: 1px solid white;
     border-radius: 70px;
     background: white;
+    padding: 20px;
     color: black;
     text-decoration: none;
     font-size: 13px;
@@ -77,6 +81,26 @@ form button{
 }
 .shop a:hover{
     background: silver;
+    font-size: 30px;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #shopping-cart{
+    display: none;
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    /* right:0; */
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
 }
 
 /*SECTION IN*/
@@ -108,7 +132,7 @@ form button{
     margin: 0 auto;
     width: 100%;
     /* height: 400px; */
-    height: 97.3%;
+    height: 95%;
 }
 .display .messi{
     background: url(img/Athletes/lebron_james.png) no-repeat center center/cover;
@@ -217,109 +241,6 @@ form button{
     font-size: 20px;
 }
 
-/* ARTICLE */
-
-#about{
-    text-align: center;
-}
-
-#about h2{
-    margin: 2rem;
-}
-
-#about p{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    line-height: 1.9rem;
-}
-
-/* CART */
-.container-products {
-    max-width: 650px;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.container-products ion-icon {
-    font-size: 25px;
-    color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.product-header {
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 4px solid lightgray;
-    margin: 0 auto;
-}
-
-.product-title {
-    width: 45%;
-}
-
-.price {
-    width: 15%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-}
-
-.quantity {
-    width: 30%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-}
-
-.total {
-    width: 10%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-}
-
-.product {
-    width: 45%;
-    display: flex;
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
-}
-
-.product ion-icon {
-    cursor: pointer;
-    
-}
-
-.products {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.products img {
-    width: 75px;
-}
-
-.basketTotalContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.basketTotalTitle {
-    width: 30%;
-}
-
-.basketTotal {
-    width: 10%;
-}
 
 /* FOOTER */
 
@@ -408,6 +329,9 @@ form button{
         display: flex;
         flex-flow: column;
         margin-bottom: 100px;
+    }
+    .messi{
+        margin-bottom: 20px;
     }
     .messi:hover + .messiMessage{
         display: block;

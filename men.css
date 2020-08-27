@@ -59,10 +59,10 @@
     text-align: center;
 }
 
-.menShoes{
+.shoes #men  {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     /* grid-template-rows: repeat(4, minmax(200px, auto)); */
     grid-gap: 20px; 
     padding: 30px 0;
@@ -74,7 +74,7 @@
     width: 100%;
 }
 
-.menShoes .one{
+.shoes  #men .one{
     grid-column: 1/2;
     grid-row: 1/2;
     /* background: url(img/Men/air-force-1-07-mens-shoe-JkTGzADv.jpg) no-repeat center center/cover; */
@@ -86,14 +86,9 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-content: center;
-    align-items: end;
-    font-size: 15px;
 }
 
-.menShoes .two{
+.shoes  #men .two {
     grid-column: 2/3;
     grid-row: 1/2;
     /* background: url(img/Men/air-huarache-mens-shoe-eoToq9X2.jpg) no-repeat center center/cover; */
@@ -104,13 +99,9 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-content: center;
-    align-items: end;
 }
 
-.menShoes .three{
+.shoes  #men .three {
     grid-column: 3/4;
     grid-row: 1/2;
     /* background: url(img/Men/air-jordan-1-mid-shoe-1zMCFJ.jpg) no-repeat center center/cover; */
@@ -121,10 +112,6 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 3/4;
-    grid-row: 2/3;
-    justify-content: center;
-    align-items: end;
 }
 
 .menShoes .four{
@@ -138,10 +125,6 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    justify-content: center;
-    align-items: end;
 }
 
 .menShoes .five{
@@ -155,10 +138,6 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    justify-content: center;
-    align-items: end;
 }
 
 .menShoes .six{
@@ -172,10 +151,6 @@
     border: grey solid 1px;
     background: grey;
     color: white;
-    grid-column: 3/4;
-    grid-row: 4/5;
-    justify-content: center;
-    align-items: end;
 }
 
 .body > section > div.three > div.size{
@@ -185,22 +160,25 @@
 
 /* MEDIA QUERY */
 @media(max-width: 630px) {
-     
+
     .menShoes{
-    display: flex;
-    flex-direction: column;
-   
-    /* grid-template-rows: 6fr 1fr 6fr 1fr 6fr 1fr !important;  */
-    /* grid-template-areas: 
-    "one two"
-    "oneText twoText"
-    "three four"
-    "threeText fourText"
-    "five six"
-    "fiveText sixText" !important; */
+        display: flex;
+        flex-flow: column;
+    }
+     
+    .menShoes  #men  {
+    display: flex;   
+    flex-flow: column;
   }
-  .one{
-      flex-basis: 50%;
+  
+  .menShoes #women  {
+    display: flex !important;   
+    flex-flow: column;
+  }
+
+  .menShoes  #kid  {
+    display: flex;   
+    flex-flow: column;
   }
 
 
