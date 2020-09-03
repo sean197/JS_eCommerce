@@ -188,7 +188,7 @@ function getFromLocalStorage() {
                 <td>${shoe.title}</td>
                 <td>${shoe.price}</td>             
                 <td>
-                <button type="button" data-id="${shoe.id}" class="btn btn-danger removeItem">Remove Item</button
+                <button type="button" data-id="${shoe.id}" class="btn btn-danger removeItem">X</button
                 </td>
            </tr>
            `;
