@@ -74,7 +74,7 @@ function addIntoCart(shoe){
              row.innerHTML = `
              <tr>
                 <td>
-                <img src="${shoe.image}" width=100>
+                <img src="${shoe.image}" style="width:40px" >
                 </td>
                 <td>${shoe.title}</td>
                 <td>${shoe.price}</td>             
