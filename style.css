@@ -71,6 +71,7 @@ form button{
 }
 .shop a{
     border: 1px solid white;
+    background: grey;
     color: black;
     text-decoration: none;
     opacity: 0.8;
